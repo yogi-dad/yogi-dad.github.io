@@ -1,51 +1,48 @@
 *{
     font-family: Ubuntu,sans-serif;
 }
-html,body{
-    margin: 0;
-    padding: 0;
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
-h1{
-    position: relative;
-}
-.typewriter h1 {
-    overflow: hidden; /* Ensures the content is hidden until animation */
-    border-right: .15em solid orange; /* Creates the typewriter cursor effect */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Centers the container */
-    letter-spacing: .15em; /* Adjusts the spacing between letters */
-    animation:
-            typing 3.5s steps(40, end),
-            blink-caret .75s step-end infinite; /* Animation timing and keyframes */
-}
-.typewriter p {
-    overflow: hidden; /* Ensures the content is hidden until animation */
-    border-right: .15em solid orange; /* Creates the typewriter cursor effect */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Centers the container */
-    letter-spacing: .15em; /* Adjusts the spacing between letters */
-    animation:
-            typing 3.5s steps(40, end),
-            blink-caret .75s step-end infinite; /* Animation timing and keyframes */
-}
-/* Typing Animation */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
 }
 
-/* Blinking cursor */
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
+h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    margin-top: 30px;
 }
-body{
-    display: grid;
-    width: 100%;
-    height: 100vh;
-    place-content: center;
-    place-items: center;
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
-.text-center{
-    text-align: center;
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.bold {
+    font-weight: bold;
 }
